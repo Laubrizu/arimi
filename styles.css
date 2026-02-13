@@ -93,7 +93,7 @@ body {
 .container {
     position: relative;
     z-index: 1;
-    max-width: 720px;
+    max-width: 960px;
     margin: 0 auto;
     padding: var(--spacing-lg);
 }
@@ -1010,14 +1010,10 @@ footer p {
 }
 
 /* Testimonials responsive */
-@media (min-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .testimonial-card.featured {
-        grid-column: 1 / -1;
-    }
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
 }
 
 @media (max-width: 767px) {
